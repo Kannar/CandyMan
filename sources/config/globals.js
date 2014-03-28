@@ -28,6 +28,7 @@ var categories = {
       collectibles: 0x0008
 };
 
+
 var masks = {
       player: categories.trigger | categories.scene | categories.collectibles,
       trigger: categories.player | categories.scene,
