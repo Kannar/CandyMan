@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Prototype 3C</title>
+		<meta name="description" content="Prototype de la 3C">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="sources/main.css">
+	</head>
+
+	<body onselectstart="return false" onkeydown="keyDown(event)" onkeyup="keyUp(event)">
+
+        <div id="wrapper">
+                <canvas id="backCanvas"></canvas>  <!-- Canvas du décor et des backgrounds -->
+                <canvas id="mainCanvas"></canvas>  <!-- Canvas de render de tous les objets dynamiques-->
+                <canvas id="foreCanvas"></canvas>  <!-- Canvas du décor situé en avant-plan -->
+        </div>
+        <canvas id="uiCanvas"></canvas>  <!-- Canvas de l'UI -->
+        
+        <div id="UI_state">Normal</div>
+
+        <!-- libs -->
+        <script type="text/javascript" src="sources/libs/Box2dWeb-2.1.a.3.min.js"></script>
+        <script src="sources/libs/stats.min.js"></script>    
+        <!-- config -->
+        <script src="sources/config/globals.js"></script>
+        <script src="sources/config/init.js"></script>
+        <script src="sources/config/utils.js"></script>
+        <script src="sources/config/tilesets_data.js"></script>
+        <script src="sources/config/images_data.js"></script>
+        <script src="sources/config/traps_data.js"></script>
+        <script src="sources/config/collectibles_data.js"></script>
+        <script src="sources/config/ennemies_data.js"></script>
+        <script src="sources/config/breakables_data.js"></script>
+        <script src="sources/config/level_data.js"></script>
+        <script src="sources/config/level_test.js"></script>
+        <script src="sources/config/level1.js"></script>
+        <script src="sources/config/level2.js"></script>
+        <script src="sources/config/level_testNewAssets.js"></script>
+        <script src="sources/config/camera_data.js"></script>
+        <script src="sources/config/levels_data.js"></script>
+        <!-- main file -->
+        <script src="sources/main.js"></script>
+        <!-- classes -->
+        <script src="sources/classes/collectible.js"></script>
+        <script src="sources/classes/collider.js"></script>
+        <script src="sources/classes/block.js"></script>
+        <script src="sources/classes/traps.js"></script>
+        <script src="sources/classes/drop.js"></script>
+        <script src="sources/classes/movablePlateform.js"></script>
+        <script src="sources/classes/blob.js"></script>
+        <script src="sources/classes/blob2.js"></script>
+        <script src="sources/classes/camera.js"></script>
+        <script src="sources/classes/player.js"></script>
+        <script src="sources/classes/levelGenerator.js"></script>
+        <script src="sources/classes/trigger.js"></script>
+        <script src="sources/classes/breakeable.js"></script>
+        <script src="sources/classes/UI.js"></script>
+        <!-- functions -->
+        <script src="sources/functions/filter.js"></script>
+        <script src="sources/functions/loaders.js"></script>
+        <script src="sources/functions/staticProperties.js"></script>
+        <script src="sources/functions/dynamicProperties.js"></script>
+        <script src="sources/functions/input.js"></script>
+        <script src="sources/functions/buffering.js"></script>
+        <script src="sources/functions/contactListener.js"></script>
+	</body>
+</html>

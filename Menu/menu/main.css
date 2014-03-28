@@ -1,0 +1,369 @@
+body  {
+
+margin:0;
+background-image: url(./image/BG_Candy_Land.png); 
+background-position: center center;
+background-repeat: no-repeat; 
+background-attachment: fixed; 
+background-size: cover; 
+-moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
+-o-background-size: 100% 100%;        /* Opera 9.5 */
+-webkit-background-size: 100% 100%;   /* Safari 3.0 */
+background-size: 100% ;           /* Gecko 2.0 (Firefox 4.0) > CSS3 */ 
+overflow:hidden;
+}
+
+
+
+input {
+width: 13px;
+height: 13px;
+padding: 0;
+margin:0;
+vertical-align: bottom;
+position: relative;
+top: -1px;
+overflow: hidden;
+z-index:5;
+color:white;
+
+}
+
+label  {
+
+font-family: 'Gloria Hallelujah', cursive;
+font-size:15px;
+color:white;
+
+}
+
+embed  {
+
+opacity:0.5;
+position:absolute;
+left:83%;
+bottom:-4%;
+
+
+}
+
+.CadreNoir  {
+
+background-color: black;
+opacity:0.8;
+width:1000px;
+height:1024px;
+position:relative;
+z-index:0;
+margin:auto;
+box-shadow: 0px -35px 35px #000;
+
+}
+
+
+
+#ButtonStart  {
+
+     background-image: url(./image/play_off.png);
+     background-size: 500px 300px; 
+     width: 500px;
+     height: 300px; 
+
+     background-repeat:no-repeat;
+
+     position: absolute;
+     top: 450px; left: 2000px; bottom: 0; right: 0;
+}
+
+#ButtonStart:hover  {
+
+     background-image: url(./image/play_on.png); 
+      background-size: 500px 300px; 
+     width: 500px;
+     height: 300px; 
+     background-repeat:no-repeat;
+     opacity:1;
+     position: absolute;
+     top:450px; left: 2000px; bottom: 0; right: 0;
+     filter: saturate(500%);
+        -webkit-filter: saturate(500%);
+        -moz-filter: saturate(500%);
+        -o-filter: saturate(500%);
+        -ms-filter: saturate(500%);
+}
+
+#ButtonStart:active {
+
+     background-image: url(./image/play_on.png); 
+     /*padding-top: 5px;*/ /*permet le centrage vertical*/
+      background-size: 500px 300px; 
+     width: 500px;
+     height: 300px;
+     background-repeat:no-repeat;
+     margin: auto;
+     position: absolute;
+     top: 450px; left: 2000px; bottom: 0; right: 0;
+      filter: saturate(500%);
+        -webkit-filter: saturate(500%);
+        -moz-filter: saturate(500%);
+        -o-filter: saturate(500%);
+        -ms-filter: saturate(500%);
+        opacity:0.8;
+}
+
+#Titre{
+
+     background-image: url(./image/title.png); 
+     background-size: 700px 700px;
+     /*padding-top: 5px;*/ /*permet le centrage vertical*/
+ 
+     background-repeat:no-repeat;
+     margin: auto;
+     position: absolute;
+     top: -1000px; left: 25%; bottom: 0; right: 0;
+
+}
+
+
+
+#ButtonCred {
+
+    text-align:center;
+    width:auto;
+    padding:8px 0;
+    text-align:center;
+    display: inline-block;
+    float:left;
+    margin:0 0px 0 0;
+    border-radius:7px;
+    font-size: 1.1em;
+    width:120px;
+    color:#999;
+    font-family: Arial,sans-serif;
+
+}
+
+#ButtonCred, #ButtonCred:active {
+    background: #444;
+    background: linear-gradient( #555, #2C2C2C);
+    background: -webkit-linear-gradient( #555, #2C2C2C);
+    background: -moz-linear-gradient( #555, #2C2C2C);
+    background: -ms-linear-gradient( #555, #2C2C2C);
+    background: -o-linear-gradient( #555, #2C2C2C);
+    background: linear-gradient( #555, #2C2C2C);
+}
+
+#ButtonCred:hover  {
+
+    background: #555;
+    background: -webkit-linear-gradient( #777, #333);
+    background: -moz-linear-gradient( #777, #333);
+    background: -ms-linear-gradient( #777, #333);
+    background: -o-linear-gradient( #777, #333);
+    background: linear-gradient( #777, #333);
+
+}
+
+#ButtonCred {
+
+box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1);
+text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);
+
+}
+
+#ButtonCred:active   {
+
+    box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+
+}
+
+#ButtonRetour, #ButtonRetour:active {
+    background: #444;
+    background: linear-gradient( #555, #2C2C2C);
+    background: -webkit-linear-gradient( #555, #2C2C2C);
+    background: -moz-linear-gradient( #555, #2C2C2C);
+    background: -ms-linear-gradient( #555, #2C2C2C);
+    background: -o-linear-gradient( #555, #2C2C2C);
+    background: linear-gradient( #555, #2C2C2C);
+}
+
+#ButtonRetour:active   {
+
+    box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+
+}
+
+#ButtonRetour  {
+
+    text-align:center;
+    width:auto;
+    padding:8px 0;
+    text-align:center;
+    display: inline-block;
+    float:left;
+    margin:0 8px 0 0;
+    border-radius:7px;
+    font-size: 1.1em;
+    width:120px;
+    color:#999;
+    font-family: Arial,sans-serif;
+
+}
+
+#ButtonRetour:hover  {
+
+    background: #555;
+    background: -webkit-linear-gradient( #777, #333);
+    background: -moz-linear-gradient( #777, #333);
+    background: -ms-linear-gradient( #777, #333);
+    background: -o-linear-gradient( #777, #333);
+    background: linear-gradient( #777, #333);
+
+}
+
+#ButtonRetour {
+
+box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1);
+text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);
+
+}
+
+#ButtonRetour:active   {
+
+    box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+
+}
+
+
+#Generique  {
+
+font-family: 'Gloria Hallelujah', cursive;
+ background-repeat:no-repeat;   
+ margin: auto;
+ position: absolute;
+ top: 315px; left: 0; bottom: 0; right: 0;
+ color: white;
+ z-index:4;
+
+}
+
+#Rules  {
+
+font-family: 'Gloria Hallelujah', cursive;
+ background-repeat:no-repeat;   
+ margin: auto;
+ color: white;
+ z-index:4;
+
+}
+
+#Generique2  {
+
+font-family: 'Gloria Hallelujah', cursive;
+ background-repeat:no-repeat;   
+ margin: auto;
+ position: absolute;
+ top: 315px; left: 0; bottom: 0; right: 0;
+ color: white;
+ z-index:4;
+ font-size:35px;
+
+}
+
+.LesNoms   {
+
+font-family: 'Gloria Hallelujah', cursive;
+font-size:25px;
+position: relative;
+z-index:2;
+bottom:315px;
+color:white;
+
+}
+
+#CacheNoir   {
+
+background-color: black;
+height:400px;
+width:1000px;
+position:relative;
+z-index:3;
+
+}
+
+#ButtonConfirme, #ButtonConfirme:active {
+    background: #444;
+    background: linear-gradient( #555, #2C2C2C);
+    background: -webkit-linear-gradient( #555, #2C2C2C);
+    background: -moz-linear-gradient( #555, #2C2C2C);
+    background: -ms-linear-gradient( #555, #2C2C2C);
+    background: -o-linear-gradient( #555, #2C2C2C);
+    background: linear-gradient( #555, #2C2C2C);
+}
+
+#ButtonConfirme:active   {
+
+    box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+
+}
+
+#ButtonConfirme  {
+
+    text-align:center;
+    width:auto;
+    padding:8px 0;
+    text-align:center;
+    display: inline-block;
+    float:left;
+    margin:0 8px 0 0;
+    border-radius:7px;
+    font-size: 1.1em;
+    width:120px;
+    color:#999;
+    font-family: Arial,sans-serif;
+    position:absolute;
+    z-index: 8;
+    background-repeat:no-repeat;   
+    margin: auto;
+    left:450px;
+
+}
+
+#ButtonConfirme:hover  {
+
+    background: #555;
+    background: -webkit-linear-gradient( #777, #333);
+    background: -moz-linear-gradient( #777, #333);
+    background: -ms-linear-gradient( #777, #333);
+    background: -o-linear-gradient( #777, #333);
+    background: linear-gradient( #777, #333);
+    position:absolute;
+    z-index:8;
+    background-repeat:no-repeat;   
+    margin: auto;
+    left:450px;
+
+}
+
+#ButtonConfirme {
+
+box-shadow: 0 0 1px rgba( 0, 0, 0, 0.2), 0 -1px 0 rgba( 255, 255, 255, 0.1);
+text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.3);
+position:absolute;
+z-index:8;
+background-repeat:no-repeat;   
+margin: auto;
+left:450px;
+
+}
+
+#ButtonConfirme:active   {
+
+    box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+    position: absolute;
+    z-index:8;
+    background-repeat:no-repeat;   
+    margin: auto;
+    left:450px;
+
+}
